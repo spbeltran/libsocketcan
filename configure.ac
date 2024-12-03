@@ -1,6 +1,6 @@
 # -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-AC_PREREQ([2.69])
+AC_PREREQ([2.71])
 
 AC_INIT([libsocketcan], [0.0.12], [bugs@pengutronix.de])
 AC_CONFIG_HEADERS([include/libsocketcan_config.h])
@@ -42,7 +42,6 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 #
 
 AC_HEADER_DIRENT
-AC_HEADER_STDC
 AC_HEADER_SYS_WAIT
 AC_CHECK_HEADERS([	\
 	arpa/inet.h	\
@@ -67,7 +66,7 @@ AC_CHECK_HEADERS([	\
 AC_C_CONST
 AC_C_INLINE
 AC_TYPE_SIZE_T
-AC_HEADER_TIME
+AC_CHECK_HEADERS_ONCE([sys/time.h])
 
 
 #
