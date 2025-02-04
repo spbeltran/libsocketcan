@@ -26,7 +26,7 @@
  * @brief API overview
  */
 
-#include <can_netlink.h>
+#include "can_netlink.h"
 
 struct rtnl_link_stats64; /* from <linux/if_link.h> */
 
