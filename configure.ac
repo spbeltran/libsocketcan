@@ -1,6 +1,6 @@
 # -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-AC_PREREQ([2.71])
+AC_PREREQ([2.69])
 
 AC_INIT([libsocketcan], [0.0.12], [bugs@pengutronix.de])
 AC_CONFIG_HEADERS([include/libsocketcan_config.h])
